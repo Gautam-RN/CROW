@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070909">
+  <meta name="description" content="CROW — the portfolio of Gautam R. Nair, an Electronics and Communication Engineering student building with electronics, software and ideas.">
+  <title>CROW — Build Beyond Limits</title>
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo.png') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <div class="loading-screen" role="status" aria-label="Loading CROW">
+    <div class="loading-mark">
+      <img src="{{ url_for('static', filename='img/logo_no_bg.png') }}" alt="">
+    </div>
+    <span class="loading-word">Loading CROW</span>
+    <div class="loading-progress"><span></span></div>
+  </div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="progress-line" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="CROW home">
+      <img src="{{ url_for('static', filename='img/logo_no_bg.png') }}" alt="CROW logo" class="brand-logo">
+      <span class="brand-word">CROW<span class="brand-dot">.</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#work">WORK <i>01</i></a>
+      <a href="#about">ABOUT <i>02</i></a>
+      <a href="#signals">SIGNALS <i>03</i></a>
+    </nav>
+    <a class="nav-contact" href="#contact"><span class="status-dot"></span> LET'S CONNECT <span class="arrow">↗</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="orbit orbit-one" aria-hidden="true"></div>
+      <div class="orbit orbit-two" aria-hidden="true"></div>
+      <div class="hero-meta reveal">
+        <span class="eyebrow"><span class="status-dot"></span> ECE STUDENT. BUILDER'S INSTINCT.</span>
+        <span class="meta-index">CROW—001 / BUILDING IN PUBLIC</span>
+      </div>
+
+      <div class="hero-copy">
+        <p class="pre-title reveal">GAUTAM R. NAIR / MODEL ENGINEERING COLLEGE</p>
+        <h1 class="hero-title" aria-label="I build what comes next">
+          <span class="title-line reveal">I BUILD</span>
+          <span class="title-line title-outline reveal">WHAT COMES</span>
+          <span class="title-line title-last reveal"><span class="green-word">NEXT</span><span class="title-period">.</span><span class="title-index">[ 01—∞ ]</span></span>
+        </h1>
+        <div class="hero-bottom reveal">
+          <p class="hero-description">Electronics. Code. Product ideas.<br>Learning by building useful things.</p>
+          <a class="round-link" href="#work" aria-label="Explore selected work"><span>EXPLORE<br>THE WORK</span><b>↓</b></a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-ring ring-a"></div><div class="art-ring ring-b"></div>
+        <div class="art-cross cross-a"></div><div class="art-cross cross-b"></div>
+        <div class="art-core"></div>
+        <div class="art-label label-top">THINK / BUILD / REPEAT</div>
+        <div class="art-label label-bottom">SIGNAL FOUND <span>●</span></div>
+      </div>
+      <div class="hero-footer">
+        <span>SCROLL TO EXPLORE THE WORK</span>
+        <div class="scroll-track"><span></span></div>
+        <span class="footer-coords">09°59' N&nbsp; / &nbsp;76°18' E</span>
+      </div>
+    </section>
+
+    <section class="manifesto section-pad" id="about">
+      <div class="section-kicker reveal"><span>01 / THE MINDSET</span><span>NO FIXED LANE.</span></div>
+      <div class="manifesto-layout">
+        <h2 class="manifesto-title reveal">Curiosity is the<br> <span class="muted">operating system.</span></h2>
+        <div class="manifesto-text reveal">
+          <p>I am Gautam, an Electronics and Communication Engineering student at Model Engineering College, Kerala. I move between circuits, code, product ideas and business experiments while building practical skills one project at a time.</p>
+          <a href="#contact" class="text-link">HAVE SOMETHING INTERESTING? <span>↗</span></a>
+        </div>
+      </div>
+      <div class="discipline-strip reveal">
+        <span>01 <b>ELECTRONICS</b></span><span>02 <b>SOFTWARE</b></span><span>03 <b>CREATIVE TECH</b></span><span>04 <b>ENTREPRENEURSHIP</b></span>
+      </div>
+    </section>
+
+    <section class="work section-pad" id="work">
+      <div class="section-kicker reveal"><span>02 / SELECTED TRANSMISSIONS</span><span>IDEAS → REALITY</span></div>
+      <div class="work-heading reveal"><h2>Projects in <span class="green-word">progress.</span></h2><p>Concepts, prototypes and software projects explored with curiosity and intent.</p></div>
+      <div class="project-grid">
+        <a class="project-card project-feature reveal" href="#contact" aria-label="VaultCart project details coming soon">
+          <div class="project-visual vault-visual">
+            <div class="visual-top"><span>PROJECT / 001</span><span>WEB SYSTEMS</span></div>
+            <div class="vault-window"><div class="window-bar"><i></i><i></i><i></i><span>VAULTCART / CONSOLE</span></div><div class="vault-content"><div class="vault-sidebar"></div><div class="vault-main"><span class="mini-label">INVENTORY OVERVIEW</span><div class="vault-number">2,048<span>+</span></div><div class="fake-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="fake-rows"><i></i><i></i><i></i></div></div></div></div>
+            <span class="visual-index">VC—01</span>
+          </div>
+          <div class="project-info"><div><span class="project-type">ECOMMERCE / INVENTORY CONCEPT</span><h3>VaultCart</h3></div><span class="project-arrow">↗</span><p>An early concept exploring product management, inventory workflows and broader banking-related functionality.</p></div>
+        </a>
+        <a class="project-card reveal" href="#contact" aria-label="EduSathi project details coming soon">
+          <div class="project-visual edusathi-visual">
+            <div class="visual-top"><span>PROJECT / 002</span><span>AI / PLATFORM</span></div>
+            <div class="network-art"><div class="network-node node-a">SKILLS</div><div class="network-node node-b">PEOPLE</div><div class="network-node node-c">OPPORTUNITY</div><svg viewBox="0 0 400 240" preserveAspectRatio="none"><path d="M65 55 L200 120 L330 55 M200 120 L80 190 M200 120 L320 190 M80 190 L320 190"/></svg></div>
+            <span class="visual-index">ES—02</span>
+          </div>
+          <div class="project-info"><div><span class="project-type">SIH / SKILL MAPPING</span><h3>EduSathi</h3></div><span class="project-arrow">↗</span><p>An ongoing Academia–Industry Collaboration Portal concept for skill mapping, opportunities and skill-gap discovery.</p></div>
+        </a>
+        <a class="project-card reveal" href="#contact" aria-label="AWED project details coming soon">
+          <div class="project-visual awed-visual">
+            <div class="visual-top"><span>PROJECT / 003</span><span>EMBEDDED / IOT</span></div>
+            <div class="radar"><div class="radar-sweep"></div><div class="radar-ring r1"></div><div class="radar-ring r2"></div><div class="radar-ring r3"></div><span class="radar-dot"></span><span class="radar-label">OBSTACLE DETECTED</span></div>
+            <span class="visual-index">AW—03</span>
+          </div>
+          <div class="project-info"><div><span class="project-type">ASSISTIVE TECHNOLOGY</span><h3>AWED</h3></div><span class="project-arrow">↗</span><p>An assistive wheelchair development concept exploring obstacle detection, electronics and phone-based control.</p></div>
+        </a>
+        <a class="project-card reveal" href="#contact" aria-label="Zioraa project details coming soon">
+          <div class="project-visual zioraa-visual">
+            <div class="visual-top"><span>PROJECT / 004</span><span>COMMERCE / BRAND</span></div>
+            <div class="zioraa-art"><span>Z</span><i></i><i></i><i></i></div>
+            <span class="visual-index">ZR—04</span>
+          </div>
+          <div class="project-info"><div><span class="project-type">CUSTOM MERCHANDISE / BUSINESS</span><h3>Zioraa</h3></div><span class="project-arrow">↗</span><p>Practical experience across merchandise, supplier research, pricing, marketing ideas and e-commerce workflows.</p></div>
+        </a>
+      </div>
+      <p class="work-note reveal"><span class="status-dot"></span> CONCEPTS AND BUILDS. STATUS VARIES BY PROJECT.</p>
+    </section>
+
+    <section class="signal-section section-pad" id="signals">
+      <div class="section-kicker reveal"><span>03 / CURRENT FREQUENCY</span><span>ALWAYS IN BETA</span></div>
+      <div class="signal-layout">
+        <div class="signal-intro reveal"><h2>Curious by<br>default<span class="green-word">.</span></h2><p>Developing across electronics, programming, AI, web development, entrepreneurship and creative technology.</p></div>
+        <div class="signal-list">
+          <div class="signal-row reveal"><span class="signal-no">01</span><div><h3>Electronics & Embedded Systems</h3><p>Digital logic, Arduino, microcontrollers and practical hardware experiments.</p></div><span class="signal-symbol">↗</span></div>
+          <div class="signal-row reveal"><span class="signal-no">02</span><div><h3>Python, Flask & Web</h3><p>Building web applications while strengthening HTML, CSS, JavaScript and database foundations.</p></div><span class="signal-symbol">↗</span></div>
+          <div class="signal-row reveal"><span class="signal-no">03</span><div><h3>AI & Emerging Technology</h3><p>Exploring AI-assisted development and practical ways technology can connect people and opportunities.</p></div><span class="signal-symbol">↗</span></div>
+          <div class="signal-row reveal"><span class="signal-no">04</span><div><h3>Entrepreneurship & Creative Work</h3><p>Learning through e-commerce, custom merchandise, design, music and digital content.</p></div><span class="signal-symbol">↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-pad" id="contact">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="section-kicker reveal"><span>04 / OPEN CHANNEL</span><span>NO GATEKEEPING.</span></div>
+      <div class="contact-content reveal">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN TO GOOD IDEAS</p>
+        <h2>Let's make<br>something <span class="green-word">matter.</span></h2>
+        <p>Have a project, a challenge, or an idea worth exploring? Send me a message.</p>
+        <div class="contact-actions">
+          <a class="contact-button" href="mailto:gautamrnair02@gmail.com">GAUTAMRNAIR02@GMAIL.COM <span>↗</span></a>
+          <a class="contact-button" href="tel:9074899113">9074899113 <span>↗</span></a>
+        </div>
+      </div>
+      <div class="contact-stamp" aria-hidden="true">C<br>R<br>W</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#home">CROW<span>.</span></a>
+    <span>INDEPENDENT BY DESIGN. CURIOUS BY NATURE.</span>
+    <a href="#home" class="back-top">BACK TO TOP ↑</a>
+    <span class="copyright">© <span id="year"></span> CROW</span>
+  </footer>
+  <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</body>
+</html>
